@@ -1,0 +1,20 @@
+# Backend
+backend/venv/
+backend/.env
+backend/weather.db
+backend/__pycache__/
+
+# Frontend
+frontend/node_modules/
+frontend/.env
+
+# Python
+*.pyc
+__pycache__/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,330 @@
+/* =========================================================
+   GLOBAL PAGE
+========================================================= */
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", sans-serif;
+
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1e3a8a 50%,
+    #2563eb 100%
+  );
+
+  background-attachment: fixed;
+
+  min-height: 100vh;
+  color: white;
+}
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.home-container {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+
+  padding: 24px;
+
+  min-height: 100vh;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-section h1 {
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+
+  font-weight: 800;
+
+  line-height: 1.1;
+
+  margin-bottom: 12px;
+
+  color: white;
+
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hero-section p {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.search-section {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 40px;
+}
+
+/* =========================================================
+   TOP DASHBOARD
+========================================================= */
+
+.top-dashboard {
+  display: grid;
+
+  grid-template-columns:
+    minmax(500px, 2fr)
+    minmax(350px, 1fr);
+
+  gap: 24px;
+
+  width: 100%;
+
+  align-items: stretch;
+
+  margin-bottom: 40px;
+}
+
+/* =========================================================
+   WEATHER INSIGHTS
+========================================================= */
+
+.analytics-placeholder {
+  width: 100%;
+
+  min-height: 420px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.03)
+  );
+
+  backdrop-filter: blur(16px);
+
+  border-radius: 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  padding: 30px;
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.analytics-placeholder h2 {
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.analytics-placeholder p {
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   INSIGHTS GRID
+========================================================= */
+
+.insights-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+.insight-card {
+  background: rgba(255, 255, 255, 0.08);
+
+  border-radius: 16px;
+
+  padding: 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.insight-card span {
+  font-size: 14px;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.insight-card strong {
+  font-size: 20px;
+
+  color: white;
+}
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.forecast-section,
+.map-section,
+.youtube-section {
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+/* =========================================================
+   EXPORT
+========================================================= */
+
+.export-section {
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(15px);
+
+  border-radius: 24px;
+
+  padding: 30px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  margin-bottom: 40px;
+}
+
+/* =========================================================
+   HOVER EFFECTS
+========================================================= */
+
+.analytics-placeholder,
+.export-section,
+.weather-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.analytics-placeholder:hover,
+.export-section:hover,
+.weather-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+  .top-dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .home-container {
+    padding: 16px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+
+  .home-container {
+    padding: 12px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+}
+.welcome-card {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.welcome-card h2 {
+  margin-bottom: 16px;
+}
+
+.welcome-card p {
+  color: rgba(255,255,255,0.85);
+}
+.footer {
+  margin-top: 60px;
+  padding: 30px;
+  text-align: center;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: rgba(255,255,255,0.85);
+  line-height: 1.8;
+}
+
+.footer a {
+  color: #93c5fd;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

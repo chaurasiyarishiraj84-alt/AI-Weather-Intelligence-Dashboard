@@ -1,0 +1,92 @@
+.export-panel {
+  width: 100%;
+  padding: 30px;
+  margin-top: 30px;
+
+  background: linear-gradient(
+    135deg,
+    #1e3c72,
+    #2a5298
+  );
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(
+    0,
+    0,
+    0,
+    0.15
+  );
+}
+
+.export-panel h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.export-panel p {
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 25px;
+}
+
+.export-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.export-btn {
+  border: none;
+  cursor: pointer;
+
+  padding: 14px 24px;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+
+  min-width: 180px;
+}
+
+.export-btn:hover {
+  transform: translateY(-3px);
+}
+
+.export-json {
+  background: #00c853;
+  color: white;
+}
+
+.export-csv {
+  background: #2196f3;
+  color: white;
+}
+
+.export-pdf {
+  background: #f44336;
+  color: white;
+}
+
+.export-md {
+  background: #ff9800;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .export-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .export-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
