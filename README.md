@@ -166,8 +166,9 @@ AI Layer
 ## Clone Repository
 
 ```bash
-git clone <your-repository-url>
-cd ai-weather-system
+git clone https://github.com/chaurasiyarishiraj84-alt/AI-Weather-Intelligence-Dashboard.git
+
+cd AI-Weather-Intelligence-Dashboard
 ```
 
 ## Backend
