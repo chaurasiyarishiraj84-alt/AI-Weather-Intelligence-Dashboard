@@ -248,27 +248,31 @@ YOUTUBE_API_KEY=your_youtube_api_key
 
 ## Dashboard
 
-![Dashboard](image.png)
+![Dashboard](frontend/image.png)
 
 ## Weather Forecast
 
-![Forecast](image-1.png) ,![5-days forcast](image-2.png)
+![Forecast](frontend/image-1.png)
+
+![5-Day Forecast](frontend/image-2.png)
 
 ## Google Maps Integration
 
-![Maps](image-3.png)
+![Maps](frontend/image-3.png)
 
 ## YouTube Travel Videos
 
-![YouTube](image-4.png)
+![YouTube](frontend/image-4.png)
 
 ## AI Travel Assistant
 
-![AI Assistant](image-5.png)
+![AI Assistant](frontend/image-5.png)
 
 ## Export Functionality
 
-![Export](image-6.png) , ![excel-exported file](image-7.png)
+![Export](frontend/image-6.png)
+
+![Excel Export](frontend/image-7.png)
 
 ---
 
